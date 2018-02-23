@@ -1,0 +1,36 @@
+<link rel="import" href="../polymer/polymer-element.html">
+
+<dom-module id="oc-transfer-confirm">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]!</h2>
+  </template>
+
+  <script>
+    /**
+     * `oc-transfer-confirm`
+     * Element for showing transfer confirmation
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class OcTransferConfirm extends Polymer.Element {
+      static get is() { return 'oc-transfer-confirm'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'oc-transfer-confirm'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(OcTransferConfirm.is, OcTransferConfirm);
+  </script>
+</dom-module>
